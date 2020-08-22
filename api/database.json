@@ -1,0 +1,199 @@
+{
+    "flowers": [
+        {
+            "id": 1,
+            "commonName": "sunflower",
+            "color": "yellow"
+        },
+        {
+            "id": 2,
+            "commonName": "rose",
+            "color": "red"
+        },
+        {
+            "id": 3,
+            "commonName": "daisy",
+            "color": "pink"
+        },
+        {
+            "id": 4,
+            "commonName": "tulip",
+            "color": "purple"
+        }
+    ],
+
+    "retailers": [
+        {
+            "id": 1,
+            "name": "Petals",
+            "city": "Atlanta",
+            "state": "GA",
+            "address": "123 Main St.",
+            "distributorId": 3
+        },
+        {
+            "id": 2,
+            "name": "Rose's Roses",
+            "city": "Dallas",
+            "state": "TX",
+            "address": "20 Longhorn Way",
+            "distributorId": 2
+        },
+        {
+            "id": 3,
+            "name": "Boulevard Flowers",
+            "city": "Chester",
+            "state": "VA",
+            "address": "2120 Ruffin Mill Rd.",
+            "distributorId": 1
+        },
+        {
+            "id": 4,
+            "name": "French Florist",
+            "city": "Los Angeles",
+            "state":"CA",
+            "address": "8568 West Pico Blvd.",
+            "distributorId": 1
+        },
+        {
+            "id": 5,
+            "name": "Amelia's Flower Truck",
+            "city": "Nashville",
+            "state": "TN",
+            "address": "3820 Charlotte Ave.",
+            "distributorId": 3
+        }
+    ],
+    "distributors": [
+        {
+            "id": 1,
+            "name": "Flowers R Us",
+            "city": "St. Louis",
+            "state": "MO",
+            "address": "345 Rose Way"
+        },     
+        {
+            "id": 2,
+            "name": "Fresh Flowers",
+            "city": "Atlanta",
+            "state": "GA",
+            "address": "999 Broadway"
+        },
+        {
+            "id": 3,
+            "name": "Wholesale Flowers",
+            "city": "Louisville",
+            "state": "KY",
+            "address":"55 State St."
+        }
+    ],
+    "nurseries": [
+        {
+            "id": 1,
+            "name": "Smith Nursery"
+        },
+        {
+            "id": 2,
+            "name": "Banks Nursery"
+        },
+        {
+            "id": 3,
+            "name": "Suzy's Nursery"
+        },
+        {
+            "id": 4,
+            "name": "Johnson's Backyard Garden"
+        },
+        {
+            "id": 5,
+            "name": "Nashville Nursery"
+        }     
+
+    ],
+    "nurseflowrel": [
+        {
+            "id": 1,
+            "flowerId": 4,
+            "nurseryId": 1
+        },
+        {
+            "id": 2,
+            "flowerId": 2,
+            "nurseryId": 1
+        },
+        {
+            "id": 3,
+            "flowerId": 1,
+            "nurseryId": 2 
+        },
+        {
+            "id": 4,
+            "flowerId": 3,
+            "nurseryId": 2
+        },
+        {
+            "id": 5,
+            "flowerId": 1,
+            "nurseryId": 3
+        },
+        {
+            "id": 6,
+            "flowerId": 3,
+            "nurseryId": 3
+        },
+        {
+            "id": 7,
+            "flowerId": 2,
+            "nurseryId": 4
+        },
+        {
+            "id": 8,
+            "flowerId": 4,
+            "nurseryId": 4
+        },
+        {
+            "id": 9,
+            "flowerId": 3,
+            "nurseryId": 5
+        },
+        {
+            "id": 10,
+            "flowerId": 4,
+            "nurseryId": 5
+        }
+    ],
+    "distnursrel": [
+        {
+            "id": 1,
+            "distributorId": 1,
+            "nurseryId": 5
+        },
+        {
+            "id": 2,
+            "distributorId": 1,
+            "nurseryId": 4
+        },
+        {
+            "id": 3,
+            "distributorId": 2,
+            "nurseryId": 3
+        },
+        {
+            "id": 4,
+            "distributorId": 2,
+            "nurseryId": 2
+        },
+        {
+            "id": 5,
+            "distributorId": 3,
+            "nurseryId": 1
+        },
+        {
+            "id": 6,
+            "distributorId": 3,
+            "nurseryId": 5
+        }
+    ]
+    
+
+}
