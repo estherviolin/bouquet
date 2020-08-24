@@ -47,16 +47,18 @@ const render = (arrOfRetailers, arrOfDistributors, nurseries, DNRelationships, N
             //relationships between nurseries and flowers
             
             const arrOfFlowerObj = nfRelArr.map(relationshipObj => {
-                let flowersArray = flowers.filter(flower => relationshipObj.flowerId === flower.id)
-                return flowersArray
+                
+                return flowers.filter(flower => relationshipObj.flowerId === flower.id)
+                
             })
             return arrOfFlowerObj //this is an array of two flower nursery relationship objects
             
         })
-        console.log(arrOfFlowerObj)
-        // arrOfFlowerObj.flat()
+     
 
-        return RetailerHTMLConverter(retailer, distributor, nurseriesPerDistributor, arrOfFlowerObj)
+        const flattenedFlowerArray = flowersPerNursery.flat()
+
+        return RetailerHTMLConverter(retailer, distributor, nurseriesPerDistributor, flattenedFlowerArray)
     }).join("")
 
     contentTarget.innerHTML = RetailerHTMLList

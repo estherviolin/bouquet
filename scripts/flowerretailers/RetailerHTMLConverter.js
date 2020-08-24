@@ -17,11 +17,11 @@ export const RetailerHTMLConverter = (retailer, distributor, nurseries, relatedF
         <div>Flowers this nursery carries:
                         <ul>
                         ${
-                            relatedFlowers.map(flowers => {
-                                return flowers.map(flower => {
-                                    return  `<li>${flower.name}`
+                            relatedFlowers.map(flower => {
+                                // return flowers.map(flower => {
+                                    return  `<li>${flower[0].commonName}`
                                 }).join("")
-                            }).join("")
+                            // }).join("")
                         }
                         </ul>
 
